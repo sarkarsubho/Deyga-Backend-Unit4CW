@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deyga All Product</title>
+    <style>
+        img{
+            width: 100%;
+        }
+        #bestseller{
+            text-align: center;
+            font-weight: 700;
+            margin: 15px auto;
+        }
+        #product{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+            text-align: center;
+            margin: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #box{
+            padding: 10px;
+            border-radius: 8px;
+           
+        }
+        #box:hover{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+        #box>img{
+            border-radius: 8PX;
+        }
+        button{
+            padding: 7px;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            width: 120px;
+            border: 1px solid black;
+            background: local;
+        }
+        #sortsection{
+            display: flex;
+            height: 50px;
+        }  
+        #left{
+            width: 90%;
+        }
+        #right{
+            /* border: 2px solid green; */
+            border-left: 1px solid rgb(78, 78, 78);
+            text-align: center;
+            padding-top: 16px;
+            width: 10%;
+            
+        }
+        #sort{
+            border: none;
+            margin: auto;
+            justify-content: center;
+            font-size:medium;
+            color: rgb(122, 122, 122);
+            text-align: center;
+        }
+        #backhome{
+            padding: 25px;
+            font-size: 11px;
+        }
+        #main-cont {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+#logos {
+  display: grid;
+  margin-left: 40%;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 8px;
+}
+#foot {
+  display: grid;
+  width: 50%;
+  margin: auto;
+  grid-template-columns: repeat(3, 300px);
+  font-family: sans-serif;
+  color: rgb(59, 92, 121);
+}
+#input-text {
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+}
+#f-btn {
+  width: 140px;
+  height: 50px;
+  margin: 20px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+#last-logos {
+  display: flex;
+  margin-left: 10%;
+  gap: 10px;
+}
+#last-f {
+  font-family: sans-serif;
+  font-size: 15px;
+  width: 80%;
+  margin: auto;
+  color: rgb(58, 44, 25);
+}
+    </style>
+    <link rel="stylesheet" href="/navbar.css">
+</head>
+<body>
+    <div id="importnav">
+        <div id="nav">
+            <div id="uper">
+                <div id="upperleft">
+                    <div>
+                        <select name="" id="">
+                            <option value="">IND </option>
+                            <option value="">USD </option>
+                            <option value="">GPB </option>
+                            <option value="">CAD </option>
+                            <option value="">JPY </option>
+                            <option value="">AUD </option>
+                        </select>
+                    </div>
+                    <div>
+                        Blogs
+                    </div>
+                    <div>Ingredients</div>
+                </div>
+        
+                <div id="uppermid">
+                    <!-- <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/200x150-01_140x@2x.png?v=1640868807" alt=""> -->
+                    <h1>Deyga</h1>
+                </div>
+        
+                <div id="upperright">
+                    <div>
+                        <input type="text" id="searchitem" placeholder=" SEARCH  PRODUCTS">
+                    </div>
+                    <div>
+                        <select name="" id="Account" onchange="changepage()">  
+                            <option value="">Account</option>
+                            <option value="account"> login</option>
+                            <option value="wishlist"> Wishlist</option>
+                            <option value="trackorder"> Track Order</option>
+                            <option value="logout"> SignUp</option>
+                        </select>
+                    </div>
+                    <div>
+                        <a href="cart.html"><div id="cartcount">Cart()</div></a>
+                   
+                    </div>
+                </div>
+                
+            </div>
+            <div id="lower">
+                <div><a href="skincare.html">Skin Care</a></div>
+                <div><a href="haircare.html">Hair Care</a></div>
+                <div><a href="bath&body.html">Bath & Body</a></div>
+                <div><a href="oralcare.html">Oral Care</a></div>
+                <div><a href="wellness.html">Wellness</a></div>
+                <div><a href="babycare.html">Baby Care</a></div>
+                <div><a href="men.html">Men</a></div>
+                <div><a href="https://www.google.com">Combo</a></div>
+                <div><a href="https://www.google.com">Gifting</a></div>
+                <div><a href="https://www.google.com">Offers</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="backhome">
+        <a href="homepage.html">Home > Best Seller</a>
+    </div>
+    <div>
+        <p id="bestseller">Best Sellers</p>
+        <div><img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/collections/38-02_x600.jpg?v=1647858001%20600w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/38-02_800x.jpg?v=1647858001%20800w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/38-02_1200x.jpg?v=1647858001%201200w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/38-02_1400x.jpg?v=1647858001%201400w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/38-02_1600x.jpg?v=1647858001%201600w" alt=""></div>
+    </div>
+    <div id="sortsection">
+        <div id="left"></div>
+        <div id="right">
+          
+            <select name="" id="sortbutton" onchange="sort()">
+                <option value="">sort</option>
+                <option value="LTH">Price low to high</option>
+                <option value="HTL">Price high to low</option>
+                <option value="az">Alphabetically,A-Z</option>
+                <option value="za">Alphabetically,Z-A</option>
+            </select>
+           
+        </div>
+    </div>
+    <hr>
+    <div id="product">
+
+    </div>
+    <hr>
+    <div id="main-countainer"></div>
+    <script type="module">
+        import footer from "./homepage.js";
+        let sidebar_div = document.getElementById("main-countainer");
+      
+        
+        sidebar_div.innerHTML = footer();
+      </script>
+    
+
+<script>
+  var Allproduct=[
+        {
+            img: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466",
+            name:"Hair Growth Oil",
+            price: 598,
+
+
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0002_undereye_400x.jpg?v=1641464118",
+            name:"Under Eye Cream",
+            price:480,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0003_Beetroot_07aa7e6f-c52b-42d1-8839-a4678e5b2ef3_600x.jpg?v=1641838454",
+            name:"Beetroot Lip Balm",
+            price:250,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0007_aloevera_904x1156_f2a4eefb-0fc7-4420-a666-89b59c8fe39e_400x.jpg?v=1642616492",
+            name:"Aloe Vera Gel",
+            price:390,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0001_Charcoal_400x.jpg?v=1641031433",
+            name:"Charcoal Bath Bar",
+            price:410,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0000_Rose_400x.jpg?v=1641031595",
+            name:"Rose & Mulethi Skin Brightening Pack",
+            price:550,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-11_400x.jpg?v=1641111206",
+            name:"Almond Milk Body Lotion",
+            price:400,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0004_beautyfying_400x.jpg?v=1641031411",
+            name:"Beautifying Serum",
+            price:730,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0006_Rose_400x.jpg?v=1641031609",
+            name:"Rose Water Toner",
+            price:490,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A5711_400x.jpg?v=1641468153",
+            name:"Under Eye Mask",
+            price:550,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A6942_400x.jpg?v=1641031640",
+            name:"Strawberry Lip Scrub",
+            price:410,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0003_Beetroot_07aa7e6f-c52b-42d1-8839-a4678e5b2ef3_600x.jpg?v=1641838454",
+            name:"Beetroot Lip Balm",
+            price:250,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A5055_400x.jpg?v=1641031662",
+            name:"Tea Tree Facial Toner",
+            price:490,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466",
+            name:"Face & Body Exfoliator",
+            price:450,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0007_aloevera_904x1156_f2a4eefb-0fc7-4420-a666-89b59c8fe39e_400x.jpg?v=1642616492",
+            name:"Aloe Vera Gel",
+            price:390,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0003_Beetroot_07aa7e6f-c52b-42d1-8839-a4678e5b2ef3_600x.jpg?v=1641838454",
+            name:"Beetroot Lip Balm",
+            price:250,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0007_aloevera_904x1156_f2a4eefb-0fc7-4420-a666-89b59c8fe39e_400x.jpg?v=1642616492",
+            name:"Aloe Vera Gel",
+            price:390,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0001_Charcoal_400x.jpg?v=1641031433",
+            name:"Charcoal Bath Bar",
+            price:410,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0000_Rose_400x.jpg?v=1641031595",
+            name:"Rose & Mulethi Skin Brightening Pack",
+            price:550,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0001_Charcoal_400x.jpg?v=1641031433",
+            name:"Charcoal Bath Bar",
+            price:410,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0000_Rose_400x.jpg?v=1641031595",
+            name:"Rose & Mulethi Skin Brightening Pack",
+            price:550,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-11_400x.jpg?v=1641111206",
+            name:"Almond Milk Body Lotion",
+            price:400,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A5711_400x.jpg?v=1641468153",
+            name:"Under Eye Mask",
+            price:550,
+        },
+        {
+            img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A6942_400x.jpg?v=1641031640",
+            name:"Strawberry Lip Scrub",
+            price:410,
+        }
+    
+    ];
+    function changepage(){
+        let option=document.getElementById("Account").value;
+        if(option==="account"){
+            window.location.href="Login.html";
+        }
+        if(option==="logout"){
+            window.location.href="SignUp.html";
+        }
+    }
+
+    function sort(){
+        let option =document.querySelector("#sortbutton").value;
+
+        if(option==="LTH"){
+            Allproduct.sort(function(a,b){
+                return a.price-b.price
+            })
+        }
+        if(option==="HTL"){
+            Allproduct.sort(function(a,b){
+                return b.price-a.price
+            })
+        }
+        if(option==="az"){
+            Allproduct.sort(function(a,b){
+                if(a.name>b.name) return 1;
+                if(a.name<b.name) return -1;
+                return 0;
+            })
+        }
+        if(option==="za"){
+            Allproduct.sort(function(a,b){
+                if(a.name>b.name) return -1;
+                if(a.name<b.name) return 1;
+                return 0;
+            })
+        }
+        // appenditem(Allproduct);
+        // console.log(Allproduct);
+    }
+
+//   -------------------------------------------------------------------------------------------------------------------------
+// var url="http://localhost:5000/user";
+
+async function getproduct(){
+    try{
+
+        let resasult= await fetch("http://localhost:5000/users");
+    
+        let data= await resasult.json();
+        console.log (data);
+        appenditem(data);
+
+    }catch(err){
+        console.log("fetch wala err fetch nahi ho raha",err);
+    }
+};
+
+getproduct();
+
+    function appenditem(data){
+        document.getElementById("product").innerHTML="";
+
+        data.forEach((element)=> {
+            
+          let div=document.createElement("div");
+          div.id="box";
+
+          let img=document.createElement("img");
+          img.src=element.product_image;
+
+          let name=document.createElement('p');
+          name.textContent=element.product_name;
+
+          let price= document.createElement("p");
+          price.textContent=`MRP ₹${element.product_price}`;
+
+          let addtocart=document.createElement("button");
+          addtocart.textContent="Add To Cart";
+         addtocart.onclick=function(event){
+                  
+                   addtocart1(element);
+               };
+
+               function addtocart1(element){
+
+                   let  cart=JSON.parse(localStorage.getItem("cart")) ||[];
+                   cart.push(element);
+
+
+                   localStorage.setItem("cart",(JSON.stringify(cart)));
+                   
+                    updatecartcount(cart);  
+               }
+
+          div.append(img,name,price,addtocart)
+               
+          document.getElementById("product").append(div);
+       
+        });
+    };
+
+    // appenditem(Allproduct);
+ //---------------------------------------------
+
+    
+
+    // function addtocart1(element){
+        
+    //                let itemlist=JSON.parse(localStorage.getItem("cartitem")) ||[];
+    //                itemlist.push(item);
+    //                localStorage.setItem("cartitem",(JSON.stringify(itemlist)));
+    //                console.log(itemlist);
+    //                 updatecartcount(itemlist);               
+    // }
+    
+   
+
+    let cart=JSON.parse(localStorage.getItem("cart"));
+    
+   
+    if(!cart){
+        cart=[];
+        localStorage.setItem("cart",JSON.stringify(cart));
+        updatecartcount(cart);
+
+    }else{
+        // cart=JSON.parse(cart);
+        updatecartcount(cart);
+             
+    }
+   function updatecartcount(cart){
+        let cartcount=document.getElementById("cartcount");
+        cartcount.textContent="Cart ("+cart.length+")";
+    } 
+       
+    //   function sort(){
+    //     let data=Allproduct;
+    //     let filtercaiteria=document.getElementById('sortbutton').value;
+    //     console.log(filtercaiteria);
+    //     if(filtercaiteria){
+    //         let updatelist=data.sort(function(a,b){
+    //             if(filtercaiteria==="A-Z"){
+    //                 if(a.name>b.name){
+    //                     return -1;
+    //                 }
+    //                 return 0;
+    //             }else if(filtercaiteria==="Z-A"){
+    //                 if(a.name<b.name){
+    //                     return 1;
+    //                 }
+    //                 return 0;
+    //             }else if(filtercaiteria==="LTA"){
+    //                 return(b.price-a.price)
+    //             }else if(filtercaiteria==="LTH"){
+    //                 return(a.price-b.price)
+    //             }
+
+    //         });
+    //         appenditem(updatelist);
+    //     }
+
+    //    }
+    // sort(Allproduct);
+
+    // let accountchange=document.getElementById("Account");
+    // accountchange.onchange()=>{
+    //     let accountvalue=document.getElementById("Account").value;
+    //     console.log(accountvalue);
+    // })
+</script>
+
+</body>
+</html>

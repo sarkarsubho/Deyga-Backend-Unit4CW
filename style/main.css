@@ -1,0 +1,225 @@
+/* -------------------mainpagecss--------------------------------------------------------------- */
+.title{
+    text-align: center;
+    margin-top: 8%;
+}
+.ppupperimg{
+        width: 100%;
+}
+
+
+
+
+
+/* --------------------------------------------card css------------------------------------------- */
+body {
+    font-family: "Barlow", sans-serif;
+    font-weight: lighter;
+  }
+  #card_container {
+    display: flex;
+    flex-wrap: wrap;
+
+  
+  }
+  .fa{
+     color: white;
+     color: wheat;
+  }
+
+  
+  #card {
+    width: 22%;
+    margin: 1%;
+    border-radius: 10px;
+    padding: 0.5%;
+  }
+  /* .card_container :hover{
+     
+  } */
+  #card:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+      rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  #card > div > img {
+    width: 100%;
+  }
+  .checked {
+    color: #ae754e;
+  }
+  .card_margin {
+    text-align: center;
+  }
+  .card_image {
+    border-radius: 10px;
+    margin-bottom: 1%;
+  }
+  .short{
+      margin-left: 90%;
+  }
+  .add_to_cart {
+    padding: 0%;
+    border-radius: 125px;
+    border: 1px solid #000;
+    padding: 6px 25px;
+    background-color: white;
+    width: 40%;
+    margin-bottom: 5%;
+  }
+  .add_to_cart > h1 {
+    margin: 0%;
+    font-size: 110%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .add_to_cart:hover {
+    transition: all;
+    color: white;
+    background-color: #000;
+  }
+  .card_title {
+    margin: 0%;
+    padding: 0%;
+    font-weight: 600;
+    font-size: 110%;
+    margin-bottom: 2%;
+  }
+  .del_price {
+    color: #808080;
+  }
+  .card_review {
+    line-height: 1.4;
+    font-weight: 400;
+  }
+  .card_mrp {
+    margin: 0%;
+
+    margin-bottom: 4%;
+  }
+  /*---------------------------------------- navbar css------------------------------------------------------------------ */
+
+  #nav {
+    display: flex;
+    flex-direction: column;
+    /* padding: 7px; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 0px;
+    width: 100%;
+    /* position: fixed; */
+    background-color: white;
+  
+  }
+  #nav:hover {
+    background-color: white;
+  }
+  #upperleft {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 20%;
+  }
+  
+  #uper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  /* h1 {
+    margin: 0;
+    font-size: 50px;
+    color: rgb(86, 10, 11);
+    font-family: Georgia, "Times New Roman", Times, serif;
+  } */
+  input,
+  select {
+    border: none;
+    border-bottom: 2px solid;
+    background: local;
+  }
+  #upperleft div {
+    margin: auto 10px;
+  }
+  #uppermid {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    /* border: 2px solid black; */
+  }
+  #upperright {
+    display: flex;
+    width: 26%;
+    justify-content: flex-end;
+  }
+  #upperright div {
+    margin: auto 10px;
+  }
+  #lower {
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  #lower div {
+    margin: 0 10px;
+  }
+  #Account {
+    border: none;
+  }
+  #main_title{
+    margin: 0;
+    font-size: 50px;
+    color: rgb(86, 10, 11);
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+ 
+
+  /* ---------------------------------------------footer css -----------------------------------------------------------x */
+
+  #main-cont {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 80%;
+    font-family: sans-serif;
+  }
+  #logos {
+    display: grid;
+    margin-left: 40%;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 8px;
+  }
+  #foot {
+    display: grid;
+    width: 50%;
+    margin: auto;
+    grid-template-columns: repeat(3, 300px);
+    font-family: sans-serif;
+    color: rgb(59, 92, 121);
+  }
+  #input-text {
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+  }
+  #f-btn {
+    margin: 20px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+  }
+  #last-logos {
+    display: flex;
+    /* margin-left: 10%; */
+    gap: 10px;
+  }
+  #last-f {
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+    color: rgb(58, 44, 25);
+  }
+
+  /* --------------------------------------------------------------- */

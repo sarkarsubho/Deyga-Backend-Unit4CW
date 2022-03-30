@@ -1,25 +1,19 @@
 {
-  "name": "deyga-backend-unit4cw",
+  "name": "deyga",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon ./allProduct/src/server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sarkarsubho/Deyga-Backend-Unit4CW.git"
+    "server": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sarkarsubho/Deyga-Backend-Unit4CW/issues"
-  },
-  "homepage": "https://github.com/sarkarsubho/Deyga-Backend-Unit4CW#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
-    "mongoose": "^6.2.9"
+    "mongoose": "^6.2.9",
+    "nodemon": "^2.0.15"
   }
 }

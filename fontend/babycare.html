@@ -4,50 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Babycare</title>
-    <link rel="stylesheet" href="./style/main.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow"
-      rel="stylesheet"
-    />
-
-</head>
-<style>
-  img{
-    width: 100%;
-  }
-  #backhome{
-    padding: 35px;
-  }
-  #backhome>a{
-    text-decoration: none;
-    font-size: 11px;
-    color: rgb(144, 144, 144);
-  }
-  .title{
-    margin: 0;
-  }
-  #sortsection{
-            display: flex;
-            height: 50px;
-        }  
-        #left{
-            width: 90%;
+    <title>Deyga All Product</title>
+    <style>
+        img{
+            width: 100%;
         }
-        #right{
-            /* border: 2px solid green; */
-            border-left: 1px solid rgb(78, 78, 78);
+        #bestseller{
             text-align: center;
-            padding-top: 16px;
-            width: 10%;
-            
+            font-weight: 700;
+            margin: 15px auto;
         }
-        
         #product{
             display: grid;
             grid-template-columns: repeat(4,1fr);
@@ -76,91 +42,360 @@
             border: 1px solid black;
             background: local;
         }
-</style>
+        #sortsection{
+            display: flex;
+            height: 50px;
+        }  
+        #left{
+            width: 90%;
+        }
+        #right{
+            /* border: 2px solid green; */
+            border-left: 1px solid rgb(78, 78, 78);
+            text-align: center;
+            padding-top: 16px;
+            width: 10%;
+            
+        }
+        #sort{
+            border: none;
+            margin: auto;
+            justify-content: center;
+            font-size:medium;
+            color: rgb(122, 122, 122);
+            text-align: center;
+        }
+        #backhome{
+            padding: 25px;
+            font-size: 11px;
+        }
+        #main-cont {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+#logos {
+  display: grid;
+  margin-left: 40%;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 8px;
+}
+#foot {
+  display: grid;
+  width: 50%;
+  margin: auto;
+  grid-template-columns: repeat(3, 300px);
+  font-family: sans-serif;
+  color: rgb(59, 92, 121);
+}
+#input-text {
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+}
+#f-btn {
+  width: 140px;
+  height: 50px;
+  margin: 20px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+#last-logos {
+  display: flex;
+  margin-left: 10%;
+  gap: 10px;
+}
+#last-f {
+  font-family: sans-serif;
+  font-size: 15px;
+  width: 80%;
+  margin: auto;
+  color: rgb(58, 44, 25);
+}
+    </style>
+    <link rel="stylesheet" href="navbar.css">
+</head>
 <body>
-
-    <div id="importnav"></div>
-
-
-  <div id="backhome"><a href="homepage.html">Home >baby Care</a></div>
-
-    
-        <h2 class="title">Baby Care</h1>
-    <hr>
-
-   
-    <div id="sortsection">
-      <div id="left"></div>
-      <div id="right">
+    <div id="importnav">
+        <div id="nav">
+            <div id="uper">
+                <div id="upperleft">
+                    <div>
+                        <select name="" id="">
+                            <option value="">IND </option>
+                            <option value="">USD </option>
+                            <option value="">GPB </option>
+                            <option value="">CAD </option>
+                            <option value="">JPY </option>
+                            <option value="">AUD </option>
+                        </select>
+                    </div>
+                    <div>
+                        Blogs
+                    </div>
+                    <div>Ingredients</div>
+                </div>
         
-          <select name="" id="sortbutton" onchange="itemsort()">
-              <option value="">sort</option>
-              <option value="LTH">Price low to high</option>
-              <option value="HTL">Price high to low</option>
-              <option value="az">Alphabetically,A-Z</option>
-              <option value="za">Alphabetically,Z-A</option>
-          </select>
-         
-      </div>
-  </div>
-    <hr>
-
-
-    <div id="product">
-      
+                <div id="uppermid">
+                    <!-- <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/200x150-01_140x@2x.png?v=1640868807" alt=""> -->
+                    <h1>Deyga</h1>
+                </div>
+        
+                <div id="upperright">
+                    <div>
+                        <input type="text" id="searchitem" placeholder=" SEARCH  PRODUCTS">
+                    </div>
+                    <div>
+                        <select name="" id="Account" onchange="changepage()">  
+                            <option value="">Account</option>
+                            <option value="account"> login</option>
+                            <option value="wishlist"> Wishlist</option>
+                            <option value="trackorder"> Track Order</option>
+                            <option value="logout"> SignUp</option>
+                        </select>
+                    </div>
+                    <div>
+                        <a href="cart.html"><div id="cartcount">Cart()</div></a>
+                   
+                    </div>
+                </div>
+                
+            </div>
+            <div id="lower">
+                <div><a href="skincare.html">Skin Care</a></div>
+                <div><a href="haircare.html">Hair Care</a></div>
+                <div><a href="bath&body.html">Bath & Body</a></div>
+                <div><a href="oralcare.html">Oral Care</a></div>
+                <div><a href="wellness.html">Wellness</a></div>
+                <div><a href="babycare.html">Baby Care</a></div>
+                <div><a href="men.html">Men</a></div>
+                <div><a href="https://www.google.com">Combo</a></div>
+                <div><a href="https://www.google.com">Gifting</a></div>
+                <div><a href="https://www.google.com">Offers</a></div>
+            </div>
+        </div>
     </div>
-    
+    <div id="backhome">
+        <a href="homepage.html">Home > Baby Care</a>
+    </div>
+    <div>
+        <p id="bestseller">Baby Care</p>
+        
+    </div>
+    <hr>
+    <div id="sortsection">
+        <div id="left"></div>
+        <div id="right">
+          
+            <select name="" id="sortbutton" onchange="sort()">
+                <option value="">sort</option>
+                <option value="LTH">Price low to high</option>
+                <option value="HTL">Price high to low</option>
+                <option value="az">Alphabetically,A-Z</option>
+                <option value="za">Alphabetically,Z-A</option>
+            </select>
+           
+        </div>
+    </div>
+    <hr>
+    <div id="product">
+
+    </div>
     <hr>
     <div id="main-countainer"></div>
-   
-</body>
-</html>
-<script type="module">
-    import navbar from './components/navbar.js'
+    <script type="module">
+        import footer from "./homepage.js";
+        let sidebar_div = document.getElementById("main-countainer");
+      
+        
+        sidebar_div.innerHTML = footer();
+      </script>
+    
 
-    console.log(navbar)
+<script>
+//   var Allproduct=[
+//         {
+//             img: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466",
+//             name:"Hair Growth Oil",
+//             price: 598,
 
-    let nav=document.getElementById("importnav");
-    nav.innerHTML=navbar();
-//------------------------------------body----------------------------------------------------
-var fetchitem;
-    function itemsort(){
+
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0002_undereye_400x.jpg?v=1641464118",
+//             name:"Under Eye Cream",
+//             price:480,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0003_Beetroot_07aa7e6f-c52b-42d1-8839-a4678e5b2ef3_600x.jpg?v=1641838454",
+//             name:"Beetroot Lip Balm",
+//             price:250,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0007_aloevera_904x1156_f2a4eefb-0fc7-4420-a666-89b59c8fe39e_400x.jpg?v=1642616492",
+//             name:"Aloe Vera Gel",
+//             price:390,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0001_Charcoal_400x.jpg?v=1641031433",
+//             name:"Charcoal Bath Bar",
+//             price:410,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0000_Rose_400x.jpg?v=1641031595",
+//             name:"Rose & Mulethi Skin Brightening Pack",
+//             price:550,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-11_400x.jpg?v=1641111206",
+//             name:"Almond Milk Body Lotion",
+//             price:400,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0004_beautyfying_400x.jpg?v=1641031411",
+//             name:"Beautifying Serum",
+//             price:730,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0006_Rose_400x.jpg?v=1641031609",
+//             name:"Rose Water Toner",
+//             price:490,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A5711_400x.jpg?v=1641468153",
+//             name:"Under Eye Mask",
+//             price:550,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A6942_400x.jpg?v=1641031640",
+//             name:"Strawberry Lip Scrub",
+//             price:410,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0003_Beetroot_07aa7e6f-c52b-42d1-8839-a4678e5b2ef3_600x.jpg?v=1641838454",
+//             name:"Beetroot Lip Balm",
+//             price:250,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A5055_400x.jpg?v=1641031662",
+//             name:"Tea Tree Facial Toner",
+//             price:490,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466",
+//             name:"Face & Body Exfoliator",
+//             price:450,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0007_aloevera_904x1156_f2a4eefb-0fc7-4420-a666-89b59c8fe39e_400x.jpg?v=1642616492",
+//             name:"Aloe Vera Gel",
+//             price:390,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0003_Beetroot_07aa7e6f-c52b-42d1-8839-a4678e5b2ef3_600x.jpg?v=1641838454",
+//             name:"Beetroot Lip Balm",
+//             price:250,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0007_aloevera_904x1156_f2a4eefb-0fc7-4420-a666-89b59c8fe39e_400x.jpg?v=1642616492",
+//             name:"Aloe Vera Gel",
+//             price:390,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0001_Charcoal_400x.jpg?v=1641031433",
+//             name:"Charcoal Bath Bar",
+//             price:410,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0000_Rose_400x.jpg?v=1641031595",
+//             name:"Rose & Mulethi Skin Brightening Pack",
+//             price:550,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0001_Charcoal_400x.jpg?v=1641031433",
+//             name:"Charcoal Bath Bar",
+//             price:410,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0000_Rose_400x.jpg?v=1641031595",
+//             name:"Rose & Mulethi Skin Brightening Pack",
+//             price:550,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Untitled-11_400x.jpg?v=1641111206",
+//             name:"Almond Milk Body Lotion",
+//             price:400,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A5711_400x.jpg?v=1641468153",
+//             name:"Under Eye Mask",
+//             price:550,
+//         },
+//         {
+//             img:"https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A6942_400x.jpg?v=1641031640",
+//             name:"Strawberry Lip Scrub",
+//             price:410,
+//         }
+    
+//     ];
+    function changepage(){
+        let option=document.getElementById("Account").value;
+        if(option==="account"){
+            window.location.href="Login.html";
+        }
+        if(option==="logout"){
+            window.location.href="SignUp.html";
+        }
+    }
+
+    var fetchdata;
+    function sort(){
         let option =document.querySelector("#sortbutton").value;
- console.log (option);
+
         if(option==="LTH"){
-          fetchitem.sort(function(a,b){
+            fetchdata.sort(function(a,b){
                 return a.product_price-b.product_price
             })
         }
         if(option==="HTL"){
-          fetchitem.sort(function(a,b){
+            fetchdata.sort(function(a,b){
                 return b.product_price-a.product_price
             })
         }
         if(option==="az"){
-          fetchitem.sort(function(a,b){
+            fetchdata.sort(function(a,b){
                 if(a.product_name>b.product_name) return 1;
                 if(a.product_name<b.product_name) return -1;
                 return 0;
             })
         }
         if(option==="za"){
-          fetchitem.sort(function(a,b){
+            fetchdata.sort(function(a,b){
                 if(a.product_name>b.product_name) return -1;
                 if(a.product_name<b.product_name) return 1;
                 return 0;
             })
         }
-        appenditem(fetchitem);
-        console.log(fetchitem);
+        appenditem(fetchdata);
+        console.log(fetchdata);
     }
+
+//   -------------------------------------------------------------------------------------------------------------------------
+// var url="http://localhost:5000/user";
+
 async function getproduct(){
     try{
 
         let resasult= await fetch("http://localhost:5000/users");
     
         let data= await resasult.json();
-        fetchitem=data;
+        fetchdata=data;
         console.log (data);
         appenditem(data);
 
@@ -213,15 +448,75 @@ getproduct();
         });
     };
 
+    // appenditem(Allproduct);
+ //---------------------------------------------
 
+    
 
+    // function addtocart1(element){
+        
+    //                let itemlist=JSON.parse(localStorage.getItem("cartitem")) ||[];
+    //                itemlist.push(item);
+    //                localStorage.setItem("cartitem",(JSON.stringify(itemlist)));
+    //                console.log(itemlist);
+    //                 updatecartcount(itemlist);               
+    // }
+    
+   
 
+    let cart=JSON.parse(localStorage.getItem("cart"));
+    
+   
+    if(!cart){
+        cart=[];
+        localStorage.setItem("cart",JSON.stringify(cart));
+        updatecartcount(cart);
 
-// --------------------------------------------------------footer-------------------------------
-  import footer from "./components/footer.js";
-  let sidebar_div = document.getElementById("main-countainer");
+    }else{
+        // cart=JSON.parse(cart);
+        updatecartcount(cart);
+             
+    }
+   function updatecartcount(cart){
+        let cartcount=document.getElementById("cartcount");
+        cartcount.textContent="Cart ("+cart.length+")";
+    } 
+       
+    //   function sort(){
+    //     let data=Allproduct;
+    //     let filtercaiteria=document.getElementById('sortbutton').value;
+    //     console.log(filtercaiteria);
+    //     if(filtercaiteria){
+    //         let updatelist=data.sort(function(a,b){
+    //             if(filtercaiteria==="A-Z"){
+    //                 if(a.name>b.name){
+    //                     return -1;
+    //                 }
+    //                 return 0;
+    //             }else if(filtercaiteria==="Z-A"){
+    //                 if(a.name<b.name){
+    //                     return 1;
+    //                 }
+    //                 return 0;
+    //             }else if(filtercaiteria==="LTA"){
+    //                 return(b.price-a.price)
+    //             }else if(filtercaiteria==="LTH"){
+    //                 return(a.price-b.price)
+    //             }
 
-  
-  sidebar_div.innerHTML = footer();
+    //         });
+    //         appenditem(updatelist);
+    //     }
 
+    //    }
+    // sort(Allproduct);
+
+    // let accountchange=document.getElementById("Account");
+    // accountchange.onchange()=>{
+    //     let accountvalue=document.getElementById("Account").value;
+    //     console.log(accountvalue);
+    // })
 </script>
+
+</body>
+</html>

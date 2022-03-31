@@ -1,0 +1,75 @@
+#nav {
+  display: flex;
+  flex-direction: column;
+  /* padding: 7px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 0px;
+  width: 100%;
+  /* position: fixed; */
+  background-color: white;
+}
+#nav:hover {
+  background: local;
+}
+#upperleft {
+  display: flex;
+  /* justify-content: space-around; */
+  width: 20%;
+}
+
+#uper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  width: 100%;
+}
+h1 {
+  margin: 0;
+  font-size: 50px;
+  color: rgb(86, 10, 11);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+input,
+select {
+  border: none;
+  border-bottom: 2px solid;
+  background: local;
+}
+#upperleft div {
+  margin: auto 10px;
+}
+#uppermid {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+#upperright {
+  display: flex;
+  width: 26%;
+  justify-content: flex-end;
+}
+#upperright div {
+  margin: auto 10px;
+}
+#lower {
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#lower div {
+  margin: 0 10px;
+}
+#Account {
+  border: none;
+}
+body {
+  /* background-color: red; */
+  font-family: sans-serif;
+  font-weight: 400;
+  margin: 0;
+}

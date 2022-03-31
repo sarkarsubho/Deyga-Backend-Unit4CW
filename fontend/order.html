@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./order.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div>
+                <div id="bx"><h1>D</h1></div>
+                <div><h3>Deygaorganics</h3></div>
+            </div>
+            <div ><h3 id="total"></h3></div>
+        </div>
+        <div id="footer">
+            <div id="sidebar">
+            <div><h4> Card</h4></div>
+            <div><h4> UPI</h4></div>
+            <div><h4> Wallets</h4></div>
+            <div><h4> Net Banking</h4></div>
+            <div><h4> PayPal</h4></div>
+        </div>
+        <div id="leftbar">
+            <input type="text" class="inp" placeholder="Card Number">
+            <input type="text"  class="inp" placeholder="Card Holder Name">
+            <div id="mac">
+                <input type="text" placeholder="MM/YY" class="mik">
+                <input type="number" name="" id="" placeholder="CCV" class="mik">
+                
+            </div>
+          <div id="cheaks">  
+              <input type="checkbox" id="cheakbox-inp">
+               <h5>Secure my card as per RBI guidelines</h5>
+       
+            </div>
+
+            <button class="inp" id="btn" onclick="window.location.href='Otp.html'">Pay Now</button>
+            
+        <div>
+         <img src="https://payments.cashfree.com/order/cards-strip.png" alt=""></div>
+        </div>
+         
+        </div>
+        <div id="footer2">
+            <h5>Payments Secured by</h5>
+            <img  src="https://cashfreelogo.cashfree.com/cashfreepayments/logopng1x/Cashfree_Payments_Logo.png" alt="">
+            <img id="pay" src="https://payments.cashfree.com/order/rectangle.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let lasttotal=JSON.parse(localStorage.getItem("disAmount"));
+
+    document.getElementById("total").textContent=`Amount to Pay ₹ ${lasttotal}`;
+</script>
+
+

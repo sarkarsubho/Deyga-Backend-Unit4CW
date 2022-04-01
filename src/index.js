@@ -11,7 +11,7 @@ app.use(express.json());
 app.use("/users",usercontroller);
 
 
-app.listen(5000, async()=>{
+app.listen(process.env.PORT, async()=>{
      
     try{
         await connect();

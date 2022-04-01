@@ -5,7 +5,7 @@ const cors =require("cors");
 const usercontroller = require("./controller/user.controller");
 const app = express();
 app.use(cors());
-app.use(express.static('fontend/homepage.html'));
+app.use(express.static('fontend'));
 app.use(express.json());
 
 app.use("/users",usercontroller);

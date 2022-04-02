@@ -92,7 +92,7 @@ let reg_api = `https://authodegya.herokuapp.com/login`
     if(data.error==false)
     {
         alert("login sucess")
-        window.location.href="homepage.html"
+        window.location.href="index.html"
     }
     
    

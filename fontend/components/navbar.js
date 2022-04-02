@@ -27,7 +27,7 @@ function navbar(){
             </div>
             <div>
                 <select name="" id="Account">
-                    <option value="">hello<p id="name"></p></option>
+                    
                     <option value="">Account</option>
                     <option value=""> Wishlist</option>
                     <option value=""> Track Order</option>

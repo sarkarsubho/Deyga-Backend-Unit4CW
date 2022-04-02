@@ -1,605 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bath&body</title>
-    <link rel="stylesheet" href="./style/main.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow"
-      rel="stylesheet"
-    />
+    <title>Document</title>
+    <link rel="stylesheet" href="skincare.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow" />
 </head>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "30%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 <style>
-  #backhome{
-    padding: 35px;
-  }
-  #backhome>a{
-    text-decoration: none;
-    font-size: 11px;
-    color: rgb(144, 144, 144);
-  }
-</style>
-<body>
-<div class="maincontainer">
-    <div id="importnav"></div>
-
-
-
-    <div id="backhome"><a href="index.html">Home >Barth & Body</a></div>
-    <div class="upperimage">
-        <h2 class="title">Bath & Body</h1>
-        <img class="ppupperimg" src="https://cdn.shopify.com/s/files/1/0034/7901/1441/collections/Collection_Banners-01_x600.jpg?v=1645422555%20600w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/Collection_Banners-01_800x.jpg?v=1645422555%20800w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/Collection_Banners-01_1200x.jpg?v=1645422555%201200w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/Collection_Banners-01_1400x.jpg?v=1645422555%201400w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/Collection_Banners-01_1600x.jpg?v=1645422555%201600w" alt="">
-    </div>
-    <div class="short">
-        <select name="cars" id="cars">
-            <option value="volvo"> </option>
-            <option value="saab">By Alphabet</option>
-            <option value="opel">High to Low</option>
-            <option value="audi">Low to High</option>
-          </select>
-
-    </div>
-
-    <div class="card_margin" id="card_container">
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-
-      <div id="card">
-        <div id="card_image_div" >
-          <img  src="https://cdn.shopify.com/s/files/1/0034/7901/1441/products/FACE_20__20BODY_20EXFOLIATOR_20100ML_400x.jpg?v=1641031466" alt="" class="product_img card_image" onmouseover="setimage()">
-        </div>
-        <h2 class="card_title">Beetroot Lip Balm</h2>
-        <div class="ratings">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="card_review">1860 reviews</span>
-        </div>
-        <p class="card_mrp">
-          <b>MRP</b> ₹ 150 &nbsp; &nbsp;<del class="del_price"> 175</del>
-        </p>
-        <button class="add_to_cart"><h1>Add to Cart</h1></button>
-      </div>
-      </div>
-    <hr>
-    
-</div>
-
-<div id="main-countainer"></div>
-   
-</body>
-</html>
-<script type="module">
-    import navbar from './components/navbar.js'
-
-    console.log(navbar)
-
-    let nav=document.getElementById("importnav");
-    nav.innerHTML=navbar();
-// --------------------------------------------------------footer-------------------------------
-  import footer from "./components/footer.js";
-  let sidebar_div = document.getElementById("main-countainer");
-
   
-  sidebar_div.innerHTML = footer();
+</style>
+
+<body>
+    <div id="main">
+
+        <div id="navbar">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <p id="welcom" >Welcome</p>
+                <p id="welcom2" ><span>Login &nbsp;</span> or <span>&nbsp; Create Account</span></p>
+                <a href="skincare.html">Skin Care</a>
+                <a href="haircare.html">Hair Care</a>
+                <a href="baby&bath.html">Bath & Baby</a>
+                <a href="oralcare.html">Oral Care</a>
+                <a href="wellness.html">Wellness</a>
+                <a href="baby&bath.html">Baby Care</a>
+                <a href="#">Men</a>
+                <a href="#">Combo</a>
+                <a href="#">Gifting</a>
+                <a href="#">Offer</a>
+               
+                
+            </div>
+    
+            <span style="font-size:30px;cursor:pointer;margin: 30% 0% 0% 2%;" onclick="openNav()">&#9776;</span>
+            <div id="logodiv">
+                <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/200x150-01_140x@2x.png?v=1640868807" alt="" id="logo">
+            </div>
+            
+        </div>
+
+        <div id="otherstuff">
+            <!-- <div id="backhome"><a href="homepage.html">Home >skincare</a></div> -->
+            <h3 id="pagename">Baby & Bath</h3>
+            <!-- <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/collections/BANNER-02_3_x600.jpg?v=1647860211%20600w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/BANNER-02_3_800x.jpg?v=1647860211%20800w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/BANNER-02_3_1200x.jpg?v=1647860211%201200w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/BANNER-02_3_1400x.jpg?v=1647860211%201400w,%20//cdn.shopify.com/s/files/1/0034/7901/1441/collections/BANNER-02_3_1600x.jpg?v=1647860211%201600w" alt="" id="bigimg"> -->
+
+
+        </div>
+
+        <div id="cardcontainer"></div>
+
+
+        <div id="footer"></div>
+    </div>
+</body>
+<script type="module">
+    import { makeAPIcall, appendData } from "./scripts/skincare.js"
+    // import{footer} from "./components/footer.js"
+
+    // let footerH = document.getElementById('footer')
+    // let footerimp = footer()
+
+    // footerH.append(footerimp)
+
+
+    let data = await makeAPIcall()
+
+    let cardcontainer = document.getElementById("cardcontainer")
+
+    appendData(data, cardcontainer)
+
+
+
+    // --------------------------------------------navbar js-------------------------------------
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-85px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+// ---------------------------------------------
+
 
 </script>
+
+</html>

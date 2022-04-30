@@ -2,4 +2,4 @@
 <p align="center">This is a Indian Natural Cosmetics & Beauty products selling website.</p>
 
 <h2>Homepage<h2>
-<img herf="./readmeimg/home.png">
+<img src="./readmeimg/home.png">
